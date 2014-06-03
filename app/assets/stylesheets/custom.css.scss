@@ -1,0 +1,58 @@
+@import "bootstrap";
+
+/* Universal */
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	background-image:url('london-road.jpg');
+	background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+
+#poshlogo {
+	max-width: 80px;
+	float: left;
+	background: white;
+	border-radius: 3px;
+}
+#main {
+	margin-top: 110px;
+	background: white;
+	border-radius: 5px;
+}
+
+.navbar-inner {
+	background: none;
+	border: none;
+	
+
+
+}
+.navbar .nav > li > a {
+	margin-top: 20px;
+    font: 20px tahoma;
+    color: #ff9500;
+    text-shadow: 0px 1px 1px black;
+    &:hover {
+    color: #ff9500;
+    }
+}
+
+
+
+#hero {
+    background: #03436a;
+    padding-top: 5px;
+    padding-bottom: 5px;
+	h1{
+	font: 50px tahoma;
+	color: white;
+	}
+	h3 {
+	color: #ff9500;
+	}
+}
