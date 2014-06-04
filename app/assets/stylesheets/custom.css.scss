@@ -21,10 +21,12 @@ body {
 	margin-top: 110px;
 	background: white;
 	border-radius: 5px;
+
 }
 
+
 .navbar-inner {
-	background: none;
+	background: white;
 	border: none;
 	
 
@@ -66,4 +68,60 @@ body {
 .field_with_errors {
   @extend .control-group;
   @extend .error;
+}
+
+
+
+/* footer */
+
+footer {
+	  margin-top: 45px;
+	  border-top: 1px solid #ff9500;
+	  color: #03436a;
+	  small{
+	  float:left;
+	}
+	ul {
+	  float: right;
+	  list-style: none;
+
+	  li {
+	    float: left;
+	    margin-left: 10px;
+	  }
+	}
+}
+
+/* news page */
+
+#news {
+	.span8 {
+	  border: 1px solid #d39f5f;
+	  padding: 10px;
+	  border-radius: 4px;
+	  margin-bottom: 2px;
+	}
+	h3{
+	  font:bold 25px tahoma;
+      color: #03436a;
+      border-bottom: 1px solid #d39f5f;
+      padding-bottom: 5px;
+	}
+	p{
+	  font: 16px tahoma;
+	  color: #3184b4;
+	}
+}
+
+
+
+/* about page */
+
+#about {
+	
+	p {
+	font: 17px tahoma;
+	color: #ff9500;
+
+	}
 }
