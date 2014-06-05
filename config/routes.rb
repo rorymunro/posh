@@ -1,4 +1,11 @@
 Posh::Application.routes.draw do
+  resources :categories, :except => [:index, :show]
+  resources :forums, :except => :index do
+    resources :topics, :shallow => true, :except => :index do
+      resources :posts, :shallow => true, :except => [:index, :show]
+    end
+    root :to => 'categories#index', :via => :get
+  end
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
   root 'static_pages#home'
@@ -7,6 +14,8 @@ Posh::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: 'delete'
   match '/news', to: 'static_pages#news', via: 'get'
   match '/about', to: 'static_pages#about', via: 'get'
+  match '/forum', to: 'static_pages#forum', via: 'get'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
