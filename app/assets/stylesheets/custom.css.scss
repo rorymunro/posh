@@ -11,6 +11,10 @@ body {
 
 }
 
+section {
+	overflow: auto;
+}
+
 #poshlogo {
 	max-width: 80px;
 	float: left;
@@ -18,7 +22,7 @@ body {
 	border-radius: 3px;
 }
 #main {
-	margin-top: 110px;
+	margin-top: 93px;
 	background: white;
 	border-radius: 5px;
 
@@ -42,12 +46,16 @@ body {
     }
 }
 
+#team {
+	border-radius: 4px;
 
+}
 
 #hero {
     background: #03436a;
     padding-top: 5px;
     padding-bottom: 5px;
+
 	h1{
 	font: 50px tahoma;
 	color: white;
@@ -94,24 +102,44 @@ footer {
 
 /* news page */
 
-#news {
-	.span8 {
-	  border: 1px solid #d39f5f;
+.row {
+	  
+      border: 1px solid #03436a;
+      box-shadow: 0px 1px 2px #03436a;
 	  padding: 10px;
+	  margin-left: 2px;
 	  border-radius: 4px;
-	  margin-bottom: 2px;
+	  margin-bottom: 7px;
+
+    .span4 {
+	  float: left;
+	  img {
+	  border-radius: 4px;
+	  max-height: 200px;
+	  min-width: 230px;
+	 }
 	}
+
+	.span7 {
+	  float: right;
+	}
+
 	h3{
 	  font:bold 25px tahoma;
-      color: #03436a;
-      border-bottom: 1px solid #d39f5f;
+      color: #d39f5f;
+      border-bottom: 1px solid #03436a;
       padding-bottom: 5px;
+      
 	}
+	
 	p{
 	  font: 16px tahoma;
 	  color: #3184b4;
+
 	}
 }
+
+
 
 
 
